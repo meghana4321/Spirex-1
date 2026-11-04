@@ -1,0 +1,156 @@
+
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f5ff;
+    color: #292344;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #49318b, #8065d8);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+    border-radius: 0 0 35px 35px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 18px;
+    color: #eee9ff;
+}
+
+/* Main sections */
+section {
+    background: white;
+    max-width: 900px;
+    margin: 28px auto;
+    padding: 28px 32px;
+    border-radius: 16px;
+    box-shadow: 0 5px 22px rgba(66, 46, 125, 0.07);
+}
+
+section h2 {
+    color: #6246b5;
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    background: #eee9ff;
+    color: #6246b5;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Project cards */
+.project-card {
+    background: #faf9ff;
+    border: 1px solid #e9e2ff;
+    border-radius: 14px;
+    padding: 23px;
+    margin: 20px 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 22px rgba(91, 65, 160, 0.12);
+}
+
+.project-card h3 {
+    color: #443080;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.project-card .tech {
+    color: #7255c5;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.project-card ul {
+    padding-left: 20px;
+}
+
+.project-card li {
+    margin-bottom: 7px;
+}
+
+.project-card a,
+section a {
+    color: #6548c5;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.project-card a:hover,
+section a:hover {
+    text-decoration: underline;
+}
+
+.demo {
+    margin-top: 12px;
+}
+
+/* Footer */
+footer {
+    background: #302451;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 45px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 650px) {
+
+    header {
+        padding: 45px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    section {
+        margin: 18px 12px;
+        padding: 22px 18px;
+    }
+
+    .project-card {
+        padding: 17px;
+    }
+}
